@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+</head>
+<body>
+
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+
+<div>
+    <form method="post" th:action="@{/findMessagesByTag}">
+        <input type="text" name="tag"/>
+        <button type="submit">find</button>
+    </form>
+</div>
+
+<div>
+    <form method="post" th:action="@{/addMessage}">
+        <input type="text" name="text"/>
+        <input type="text" name="tag"/>
+        <button type="submit">add</button>
+    </form>
+    Messages:
+</div>
+
+<table>
+    <tr>
+        <th>id</th>
+        <th>text</th>
+        <th>tag</th>
+    </tr>
+    <tr th:each="message : ${messages}">
+        <td th:text="${message.id}"></td>
+        <td th:text="${message.text}"></td>
+        <td th:text="${message.tag}"></td>
+    </tr>
+</table>
+</body>
+</html>
