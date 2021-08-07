@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="db_itra@localhost" uuid="76d62105-c5eb-4c43-834d-20f0cb1d42fc">
+    <data-source source="LOCAL" name="r47f95bbhlntr9yl@pei17y9c5bpuh987.chr7pe7iynqr.eu-west-1.rds.amazonaws.com" uuid="76d62105-c5eb-4c43-834d-20f0cb1d42fc">
       <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/db_itra</jdbc-url>
+      <jdbc-url>jdbc:mysql://pei17y9c5bpuh987.chr7pe7iynqr.eu-west-1.rds.amazonaws.com:3306/r47f95bbhlntr9yl</jdbc-url>
       <driver-properties>
         <property name="autoReconnect" value="true" />
         <property name="zeroDateTimeBehavior" value="CONVERT_TO_NULL" />
